@@ -1,1 +1,1 @@
-# LABORATORIO-8-Simulaci-n-y-Monitoreo-de-Variables-Cardiovasculares-y-Hemodin-micas
+# LABORATORIO 8: Simulación y monitoreo de variables cardiovasculares y hemodinámicas
