@@ -53,7 +53,8 @@ Para el índice de perfusión y la onda pletismográfica no se establece un erro
 | Onda pletismográfica | No tiene EMP numérico | Se evalúa cualitativamente por forma, amplitud y estabilidad. |
 
 ## PARTE B
-1.  | Prueba | Alarma evaluada | Límite configurado en el uMEC100 | Valor simulado en OxSim | ¿Alarma activa? | Tiempo de respuesta |
+
+| Prueba | Alarma evaluada | Límite configurado en el uMEC100 | Valor simulado en OxSim | ¿Alarma activa? | Tiempo de respuesta |
 |---|---|---|---|---|---|
 | 1 | Frecuencia cardiaca baja / bradicardia | Límite inferior de FC: 50 bpm | FC: 40 bpm / SpO₂: 95% | Sí | 5 s |
 | 2 | SpO₂ baja | Límite inferior de SpO₂: 90% | FC: 80 bpm / SpO₂: 85% | Sí | 5 s |
