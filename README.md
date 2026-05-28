@@ -53,7 +53,7 @@ Para el índice de perfusión y la onda pletismográfica no se establece un erro
 | Onda pletismográfica | No tiene EMP numérico | Se evalúa cualitativamente por forma, amplitud y estabilidad. |
 
 ## PARTE B
-
+- 
 | Prueba | Alarma evaluada | Límite configurado en el uMEC100 | Valor simulado en OxSim | ¿Alarma activa? | Tiempo de respuesta |
 |---|---|---|---|---|---|
 | 1 | Frecuencia cardiaca baja / bradicardia | Límite inferior de FC: 50 bpm | FC: 40 bpm / SpO₂: 95% | Sí | 5 s |
@@ -64,6 +64,28 @@ Para el índice de perfusión y la onda pletismográfica no se establece un erro
 De acuerdo con la verificación realizada, el monitor uMEC100 activó correctamente las alarmas cuando los valores simulados en el OxSim superaron los límites configurados. En la prueba de bradicardia, al simular una frecuencia cardiaca de 40 bpm, el valor quedó por debajo del límite inferior establecido, por lo que se activó la alarma correspondiente. Para la condición normal, con una frecuencia cardiaca de 80 bpm, el equipo se mantuvo dentro del rango esperado. Finalmente, en la prueba de taquicardia, al simular una frecuencia cardiaca de 140 bpm, el valor superó el límite superior configurado y se generó la alarma.
 
 En las pruebas relacionadas con la saturación de oxígeno, se observó que el monitor respondió adecuadamente ante valores fuera del rango configurado. Cuando se simuló una SpO₂ baja, menor al límite inferior establecido, el equipo activó la alarma visual y sonora. De igual manera, cuando se simuló una SpO₂ alta, superior al límite máximo permitido, también se presentó activación de alarma. En general, el comportamiento del monitor fue coherente con los valores programados en el simulador, lo que indica que el sistema de alarmas respondió de forma adecuada durante la prueba.
+
+- ### Paciente bradicárdico
+
+Se configuró el simulador OxSim para representar un paciente bradicárdico con una frecuencia cardiaca de 40 bpm y una saturación de oxígeno de 95%. Luego, se compararon los valores simulados con los valores mostrados en el monitor uMEC100, tomando el OxSim como valor de referencia.
+
+| Variable            | Valor simulado en OxSim | Valor mostrado en uMEC100 | Error absoluto | Error porcentual |
+| ------------------- | ----------------------: | ------------------------: | -------------: | ---------------: |
+| SpO₂                |                     95% |                       96% |             1% |            1,05% |
+| Frecuencia cardiaca |                  40 bpm |                    40 bpm |          0 bpm |               0% |
+
+Cálculos realizados:
+
+Error absoluto SpO₂ = |96 - 95| = 1%
+
+Error porcentual SpO₂ = (1 / 95) × 100 = 1,05%
+
+Error absoluto FC = |40 - 40| = 0 bpm
+
+Error porcentual FC = (0 / 40) × 100 = 0%
+
+De acuerdo con los resultados, el monitor uMEC100 registró correctamente la frecuencia cardiaca simulada, ya que no presentó diferencia respecto al valor configurado en el OxSim. En la saturación de oxígeno se presentó una diferencia de 1%, equivalente a un error porcentual de 1,05%, lo cual indica una variación baja entre el valor simulado y el valor mostrado por el monitor.
+
 
   
 
