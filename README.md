@@ -86,6 +86,75 @@ Error porcentual FC = (0 / 40) × 100 = 0%
 
 De acuerdo con los resultados, el monitor uMEC100 registró correctamente la frecuencia cardiaca simulada, ya que no presentó diferencia respecto al valor configurado en el OxSim. En la saturación de oxígeno se presentó una diferencia de 1%, equivalente a un error porcentual de 1,05%, lo cual indica una variación baja entre el valor simulado y el valor mostrado por el monitor.
 
+- ### Registro de la forma de onda fotopletismográfica
+
+Al observar la pantalla del monitor uMEC100, se identificó la forma de onda fotopletismográfica correspondiente a la señal del pulsioxímetro. La señal presentó un comportamiento pulsátil y periódico, relacionado con la detección del pulso periférico. Esto permitió verificar que el sensor de SpO₂ estaba captando correctamente la señal generada por el simulador OxSim y que el monitor representaba visualmente los cambios asociados a la frecuencia cardiaca y a la saturación de oxígeno.
+
+- ### Verificación de alarma por SpO₂ baja
+
+En el monitor uMEC100 se configuró el límite inferior de alarma de SpO₂ en 90%. Posteriormente, el simulador OxSim se ajustó para simular una frecuencia cardiaca de 80 bpm y una SpO₂ de 85%. Como el valor de SpO₂ simulado se encontraba por debajo del límite configurado, se esperó un tiempo de 5 segundos y se verificó la activación de la alarma sonora y visual en el uMEC100.
+
+| Variable | Valor simulado en OxSim | Valor mostrado en uMEC100 | Error absoluto | Error porcentual |
+|---|---:|---:|---:|---:|
+| SpO₂ | 85% | 83% | 2% | 2,35% |
+| Frecuencia cardiaca | 80 bpm | 80 bpm | 0 bpm | 0% |
+
+Cálculos realizados:
+
+Error absoluto SpO₂ = |83 - 85| = 2%
+
+Error porcentual SpO₂ = (2 / 85) × 100 = 2,35%
+
+Error absoluto FC = |80 - 80| = 0 bpm
+
+Error porcentual FC = (0 / 80) × 100 = 0%
+
+De acuerdo con los resultados obtenidos, el monitor uMEC100 detectó correctamente la condición de baja saturación de oxígeno, ya que el valor mostrado de SpO₂ fue inferior al límite configurado de 90%. La alarma sonora y visual se activó después de 5 segundos, cumpliendo con lo solicitado en la práctica. En cuanto a los errores, la SpO₂ presentó un error absoluto de 2% y un error porcentual de 2,35%, mientras que la frecuencia cardiaca no presentó diferencia entre el valor simulado y el valor mostrado por el monitor.
+- ### Configuración de alarma de límite superior de SpO₂
+
+En el monitor uMEC100 se configuró la alarma de límite superior de SpO₂ en 97%. Esta configuración permitió evaluar si el equipo activaba la alarma cuando el valor de saturación de oxígeno superaba el límite establecido.
+
+- ### Verificación de alarma por SpO₂ alta en modo Low Perfusion
+
+Posteriormente, el simulador OxSim se ajustó para simular una SpO₂ de 99% en modo “Low Perfusion”, manteniendo una frecuencia cardiaca de 80 bpm. A partir de ese momento, se esperaron 5 segundos y se verificó la activación de la alarma sonora y visual en el monitor uMEC100.
+
+| Variable | Valor simulado en OxSim | Valor mostrado en uMEC100 | Error absoluto | Error porcentual |
+|---|---:|---:|---:|---:|
+| SpO₂ | 99% | 99% | 0% | 0% |
+| Frecuencia cardiaca | 80 bpm | 80 bpm | 0 bpm | 0% |
+
+Cálculos realizados:
+
+Error absoluto SpO₂ = |99 - 99| = 0%
+
+Error porcentual SpO₂ = (0 / 99) × 100 = 0%
+
+Error absoluto FC = |80 - 80| = 0 bpm
+
+Error porcentual FC = (0 / 80) × 100 = 0%
+
+De acuerdo con los resultados obtenidos, el monitor uMEC100 activó correctamente la alarma sonora y visual, ya que la SpO₂ simulada fue de 99% y superó el límite superior configurado de 97%. No se presentó error entre los valores simulados en el OxSim y los valores mostrados en el uMEC100. En cuanto a la onda fotopletismográfica, sí se observó una posible distorsión o disminución en la amplitud de la señal, debido a que el modo “Low Perfusion” simula una condición de baja perfusión periférica, en la cual la señal pulsátil puede verse más débil o menos definida.
+
+- ### Verificación de alarma por frecuencia cardiaca elevada
+
+Con un valor de SpO₂ de 95%, se generó una taquicardia en el simulador OxSim configurando una frecuencia cardiaca de 140 bpm. Luego, se observó la onda en el monitor uMEC100 y se verificó si se activaba la alarma correspondiente a frecuencia cardiaca elevada.
+
+| Variable | Valor simulado en OxSim | Valor mostrado en uMEC100 | Error absoluto | Error porcentual |
+|---|---:|---:|---:|---:|
+| SpO₂ | 95% | 94% | 1% | 1,05% |
+| Frecuencia cardiaca | 140 bpm | 141 bpm | 1 bpm | 0,71% |
+
+Cálculos realizados:
+
+Error absoluto SpO₂ = |94 - 95| = 1%
+
+Error porcentual SpO₂ = (1 / 95) × 100 = 1,05%
+
+Error absoluto FC = |141 - 140| = 1 bpm
+
+Error porcentual FC = (1 / 140) × 100 = 0,71%
+
+De acuerdo con los resultados obtenidos, el monitor uMEC100 registró una frecuencia cardiaca de 141 bpm frente a los 140 bpm configurados en el OxSim, presentando un error absoluto de 1 bpm y un error porcentual de 0,71%. Para la SpO₂, el monitor mostró 94% frente al valor patrón de 95%, con un error absoluto de 1% y un error porcentual de 1,05%. La alarma de frecuencia cardiaca elevada sí se activó, ya que el valor de frecuencia cardiaca se encontraba por encima del límite superior configurado para el paciente.
 
   
 
