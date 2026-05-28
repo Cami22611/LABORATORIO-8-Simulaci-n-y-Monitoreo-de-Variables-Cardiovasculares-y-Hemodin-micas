@@ -216,7 +216,16 @@ En la prueba de SpO₂ alta en modo “Low Perfusion”, el simulador se configu
 Finalmente, en la condición de taquicardia, con una frecuencia cardiaca simulada de 140 bpm, la onda presentó pulsos más cercanos entre sí. Esto se debe a que el tiempo entre latidos disminuye cuando aumenta la frecuencia cardiaca. El monitor registró una frecuencia de 141 bpm y una SpO₂ de 94% frente al valor patrón de 95%, mostrando diferencias bajas respecto a los valores simulados. Además, se activó la alarma de frecuencia cardiaca elevada, ya que el valor superó el límite superior configurado.
 
 En general, se evidenció que la forma de onda cambia de acuerdo con la frecuencia cardiaca y con la calidad de la señal de SpO₂. A menor frecuencia cardiaca, los pulsos aparecen más separados; a mayor frecuencia cardiaca, los pulsos aparecen más cercanos. Además, en condiciones de baja perfusión, la onda puede disminuir su amplitud o presentar distorsión, debido a que la señal pulsátil captada por el sensor es más débil.
-  
+
+## CONCLUSIONES
+
+Al finalizar la práctica se pudo comprobar que el uso del simulador OxSim y del monitor permitió reproducir diferentes condiciones fisiológicas, como bradicardia, taquicardia, saturación baja de oxígeno y saturación elevada. Estas condiciones fueron útiles para verificar el comportamiento de las alarmas sonoras y visuales del monitor, así como para observar la respuesta de la señal fotopletismográfica ante cambios en la frecuencia cardiaca y en la SpO₂.
+
+Respecto a la confiabilidad del D30 en las pruebas realizadas, se puede concluir que este equipo funciona como una herramienta importante para la verificación biomédica, ya que permite evaluar si los equipos médicos responden adecuadamente ante señales simuladas o condiciones controladas. Su confiabilidad depende de que el equipo se encuentre calibrado, de que las conexiones sean correctas y de que el procedimiento se realice siguiendo una metodología ordenada. Por esta razón, el D30 puede considerarse confiable para pruebas funcionales y de verificación, aunque sus resultados siempre deben interpretarse dentro del contexto de la práctica y no como una medición clínica directa en un paciente real.
+
+En cuanto al módulo OxSim, se evidenció que permite simular condiciones patológicas básicas relacionadas con pulsioximetría, como disminución de SpO₂, baja perfusión, bradicardia y taquicardia. Esto facilita la evaluación del comportamiento del monitor ante situaciones críticas sin necesidad de utilizar pacientes reales. Sin embargo, el OxSim también presenta limitaciones, ya que las señales generadas son simuladas y no reproducen completamente la variabilidad fisiológica de un paciente real, como movimientos, mala colocación del sensor, cambios bruscos de perfusión, interferencias, arritmias complejas o alteraciones reales en la circulación periférica.
+
+Finalmente, la práctica permitió reconocer la importancia de verificar periódicamente los monitores biomédicos y sus alarmas, ya que estos equipos son fundamentales para la vigilancia del paciente. La activación correcta de las alarmas ante valores fuera de rango demuestra que el sistema puede alertar al personal clínico frente a condiciones de riesgo. No obstante, también se debe tener en cuenta que la confiabilidad de la medición depende tanto del estado del equipo como de la calidad de la señal, la configuración adecuada de los límites de alarma y las condiciones bajo las cuales se realiza la prueba.
 
 
 
