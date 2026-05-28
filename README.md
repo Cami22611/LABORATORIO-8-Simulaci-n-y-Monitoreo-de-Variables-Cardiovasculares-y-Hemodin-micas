@@ -227,5 +227,23 @@ En cuanto al módulo OxSim, se evidenció que permite simular condiciones patol�
 
 Finalmente, la práctica permitió reconocer la importancia de verificar periódicamente los monitores biomédicos y sus alarmas, ya que estos equipos son fundamentales para la vigilancia del paciente. La activación correcta de las alarmas ante valores fuera de rango demuestra que el sistema puede alertar al personal clínico frente a condiciones de riesgo. No obstante, también se debe tener en cuenta que la confiabilidad de la medición depende tanto del estado del equipo como de la calidad de la señal, la configuración adecuada de los límites de alarma y las condiciones bajo las cuales se realiza la prueba.
 
+## PREGUNTAS PARA LA DISCUSIÓN
+
+### Pregunta 1. ¿Cuál es el principio de operación del Pronk OxSim OX-1 para simular una onda pulsátil?
+
+El Pronk OxSim OX-1 funciona como un simulador óptico de pulsioximetría. Su principio de operación consiste en generar señales ópticas que imitan el comportamiento de un dedo real colocado en un sensor de SpO₂. Para esto, el equipo simula variaciones de absorción de luz roja e infrarroja, similares a las que se producen cuando cambia el volumen de sangre arterial durante cada pulso cardiaco.
+
+El sensor de pulsioximetría detecta estas variaciones como una señal pulsátil o fotopletismográfica. A partir de esa señal, el monitor calcula la saturación periférica de oxígeno y la frecuencia cardiaca. Por esta razón, el OxSim permite comprobar si el monitor, el sensor y el cable de extensión responden correctamente ante diferentes condiciones simuladas de SpO₂, frecuencia cardiaca y perfusión.
+
+En la práctica, el OxSim permitió simular condiciones como bradicardia, taquicardia, saturación baja, saturación alta y baja perfusión. Esto permitió observar la respuesta del monitor uMEC100 ante condiciones controladas, sin necesidad de realizar pruebas directamente sobre un paciente.
+
+### Pregunta 2. ¿Por qué la SpO₂ baja puede ser un falso positivo o falsa alarma en una situación de mala perfusión?
+
+Una SpO₂ baja puede convertirse en un falso positivo cuando existe mala perfusión periférica porque el sensor recibe una señal pulsátil débil o inestable. La pulsioximetría necesita detectar adecuadamente los cambios de volumen sanguíneo arterial en el sitio donde está colocado el sensor. Si la perfusión es baja, llega menos sangre pulsátil al dedo o al área medida, por lo que la amplitud de la onda fotopletismográfica disminuye.
+
+Cuando la señal es débil, el monitor puede tener dificultad para diferenciar la señal arterial real del ruido, del movimiento, de la luz ambiental o de interferencias externas. Como consecuencia, el equipo puede interpretar de forma incorrecta la relación entre la luz roja e infrarroja y mostrar una SpO₂ más baja de la real. En ese caso, la alarma de saturación baja se activa aunque el paciente no necesariamente tenga una hipoxemia verdadera.
+
+Por esta razón, ante una alarma de SpO₂ baja en condiciones de mala perfusión, no se debe interpretar únicamente el valor numérico. También se debe revisar la forma de onda fotopletismográfica, la amplitud de la señal, la colocación del sensor, la temperatura periférica, el estado circulatorio del paciente y la presencia de movimiento. Si la onda se observa distorsionada, irregular o de muy baja amplitud, la lectura puede no ser confiable y la alarma puede corresponder a un falso positivo.
+
 
 
