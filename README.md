@@ -125,7 +125,8 @@ Se observó y registró la forma de onda de la señal fotopletismográfica mostr
 <p align="center">
   <strong>Fuente:</strong> Fotografía tomada en el laboratorio.
 </p>
-En la imagen se observa una frecuencia cardiaca de **80 bpm** y una SpO₂ de **85%**. La onda fotopletismográfica presenta pulsos regulares, con una amplitud visible y una morfología repetitiva. Esto indica que el sensor estaba detectando adecuadamente la señal óptica generada por el simulador.
+
+En la imagen se observa una frecuencia cardiaca de  **80 bpm** y una SpO₂ de **85%**. La onda fotopletismográfica presenta pulsos regulares, con una amplitud visible y una morfología repetitiva. Esto indica que el sensor estaba detectando adecuadamente la señal óptica generada por el simulador.
 
 La forma de onda fotopletismográfica representa los cambios pulsátiles del volumen sanguíneo periférico detectados por el sensor de SpO₂. Por ello, su frecuencia guarda relación directa con la frecuencia cardiaca, mientras que su amplitud y definición dependen de la calidad de la perfusión y de la señal recibida por el monitor.
 
@@ -207,6 +208,7 @@ Con el límite superior ya configurado en 97%, se verificó la activación de la
 <p align="center">
   <strong>Fuente:</strong> Fotografía tomada en el laboratorio.
 </p>
+
 ### Cálculo de errores
 
 | Variable | Valor simulado en OxSim | Valor mostrado en uMEC100 | Error absoluto | Error porcentual |
@@ -299,26 +301,26 @@ También se evidencia que el error absoluto aumentó a medida que aumentó la en
 
 En general, los resultados muestran un comportamiento estable del desfibrilador, con errores porcentuales bajos y sin variaciones bruscas entre las pruebas. La desviación estándar del error porcentual fue de 0,37%, lo que indica que los errores se mantuvieron agrupados alrededor del promedio. Por lo tanto, bajo estas condiciones de prueba, el desfibrilador presentó una entrega de energía consistente y cercana a los valores de referencia.
 
-### Análisis 2. Relación entre la forma de onda visualizada en el D30 y la frecuencia cardiaca/saturación periférica de oxígeno
+### Análisis 2. Relación entre la forma de onda visualizada en el monitor y la frecuencia cardiaca/saturación periférica de oxígeno
 
-Durante la práctica se observó la forma de onda asociada a la señal fotopletismográfica. Esta señal representa los cambios pulsátiles del volumen sanguíneo periférico detectados por el sensor de pulsioximetría. Por esta razón, la forma de onda se relaciona directamente con la frecuencia cardiaca simulada y con la calidad de la señal de saturación periférica de oxígeno.
+Durante la práctica se observó la forma de onda asociada a la señal fotopletismográfica en el monitor uMEC100. Esta señal representa los cambios pulsátiles relacionados con la detección óptica del pulso periférico por medio del sensor de SpO₂. Por esta razón, la forma de onda se relaciona directamente con la frecuencia cardiaca simulada y con la calidad de la señal de saturación periférica de oxígeno.
 
-| Condición evaluada | Frecuencia cardiaca simulada | SpO₂ simulada | Valor observado en el monitor | Comportamiento de la onda |
+| Condición evaluada | Frecuencia cardiaca observada | SpO₂ observada | Valor observado en el monitor | Comportamiento de la onda |
 |---|---:|---:|---|---|
-| Bradicardia | 40 bpm | 95% | FC 40 bpm / SpO₂ 96% | Pulsos más separados, onda lenta y estable |
-| SpO₂ baja | 80 bpm | 85% | FC 80 bpm / SpO₂ 83% | Onda periódica, con activación de alarma por baja saturación |
-| SpO₂ alta en modo Low Perfusion | 80 bpm | 99% | FC 80 bpm / SpO₂ 99% | Onda de menor amplitud y posible distorsión |
-| Taquicardia | 140 bpm | 95% | FC 141 bpm / SpO₂ 94% | Pulsos más cercanos, onda rápida y repetitiva |
+| Bradicardia | 40 bpm | 95% | FC 40 bpm / SpO₂ 95% | Pulsos más separados, onda lenta y estable |
+| SpO₂ baja | 80 bpm | 85% | FC 80 bpm / SpO₂ 85% | Onda periódica, con activación de alarma por baja saturación |
+| SpO₂ alta | 140 bpm | 99% | FC 140 bpm / SpO₂ 99% | Onda rápida, con activación de alarma por saturación alta |
+| Taquicardia | 140 bpm | 98% | FC 140 bpm / SpO₂ 98% | Pulsos más cercanos, onda rápida y repetitiva |
 
-En la condición de bradicardia, con una frecuencia cardiaca simulada de 40 bpm, la onda presentó pulsos más separados entre sí. Esto ocurre porque el intervalo entre cada latido es mayor cuando la frecuencia cardiaca disminuye. Por esta razón, la señal se observa más lenta en la pantalla del monitor, aunque mantiene una forma pulsátil definida.
+En la condición de bradicardia, el monitor registró una frecuencia cardiaca de 40 bpm y una SpO₂ de 95%. En esta condición, la onda fotopletismográfica presentó pulsos más separados entre sí, debido a que el intervalo entre cada latido aumenta cuando la frecuencia cardiaca disminuye. Por esta razón, la señal se observa más lenta en la pantalla del monitor, aunque mantiene una forma pulsátil definida y estable.
 
-Cuando se simuló una frecuencia cardiaca de 80 bpm, la onda se observó más regular, con pulsos distribuidos de manera uniforme. En la prueba de SpO₂ baja, con un valor simulado de 85%, el monitor registró una saturación de 83% y activó la alarma correspondiente, debido a que el valor se encontraba por debajo del límite inferior configurado en 90%. En esta condición, la frecuencia de la onda se mantuvo estable porque la frecuencia cardiaca no cambió, pero la alarma se relacionó directamente con el valor de saturación.
+En la condición de SpO₂ baja, el monitor registró una frecuencia cardiaca de 80 bpm y una SpO₂ de 85%. Como el límite inferior de alarma se configuró en 90%, el valor observado quedó por debajo del umbral establecido y se activó la alarma de baja saturación. En esta prueba, la onda conservó un comportamiento periódico, ya que la frecuencia cardiaca se mantuvo en un valor intermedio; sin embargo, la condición crítica estuvo asociada al valor bajo de saturación de oxígeno.
 
-En la prueba de SpO₂ alta en modo “Low Perfusion”, el simulador se configuró con una saturación de 99% y una frecuencia cardiaca de 80 bpm. En esta condición, la onda fotopletismográfica pudo observarse con menor amplitud o con distorsión. Esto se debe a que el modo de baja perfusión simula una señal periférica débil, lo que disminuye la intensidad de la señal pulsátil detectada por el sensor. Aunque el valor numérico de SpO₂ fue registrado correctamente, la calidad visual de la onda puede verse afectada.
+En la condición de SpO₂ alta, el monitor registró una SpO₂ de 99%, valor superior al límite configurado de 97%. Por esta razón, se activó la alarma de saturación alta. En la imagen correspondiente también se observó una frecuencia cardiaca de 140 bpm, por lo que la onda presentó ciclos más próximos entre sí. Esto se explica porque, al aumentar la frecuencia cardiaca, disminuye el tiempo entre latidos y la señal fotopletismográfica se visualiza más rápida.
 
-Finalmente, en la condición de taquicardia, con una frecuencia cardiaca simulada de 140 bpm, la onda presentó pulsos más cercanos entre sí. Esto se debe a que el tiempo entre latidos disminuye cuando aumenta la frecuencia cardiaca. El monitor registró una frecuencia de 141 bpm y una SpO₂ de 94% frente al valor patrón de 95%, mostrando diferencias bajas respecto a los valores simulados. Además, se activó la alarma de frecuencia cardiaca elevada, ya que el valor superó el límite superior configurado.
+Finalmente, en la condición de taquicardia, el monitor registró una frecuencia cardiaca de 140 bpm y una SpO₂ de 98%. La onda fotopletismográfica presentó pulsos cercanos y repetitivos, coherentes con una frecuencia cardiaca elevada. Este comportamiento confirma que la frecuencia de la onda aumenta a medida que aumenta la frecuencia cardiaca simulada u observada en el monitor.
 
-En general, se evidenció que la forma de onda cambia de acuerdo con la frecuencia cardiaca y con la calidad de la señal de SpO₂. A menor frecuencia cardiaca, los pulsos aparecen más separados; a mayor frecuencia cardiaca, los pulsos aparecen más cercanos. Además, en condiciones de baja perfusión, la onda puede disminuir su amplitud o presentar distorsión, debido a que la señal pulsátil captada por el sensor es más débil.
+En general, se evidenció que la forma de onda fotopletismográfica cambia de acuerdo con la frecuencia cardiaca y con la condición de saturación evaluada. A menor frecuencia cardiaca, como en 40 bpm, los pulsos aparecen más separados; mientras que a frecuencias elevadas, como 140 bpm, los pulsos aparecen más cercanos. Además, la SpO₂ no modifica directamente la frecuencia de la onda, pero sí determina la activación de alarmas cuando se encuentra por debajo o por encima de los límites configurados.
 
 ## CONCLUSIONES
 
