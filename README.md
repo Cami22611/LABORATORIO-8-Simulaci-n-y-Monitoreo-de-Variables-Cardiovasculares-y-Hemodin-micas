@@ -20,6 +20,7 @@ El monitoreo de signos vitales constituye una herramienta fundamental en el ámb
 <p align="center">
   <strong>Fuente:</strong> Pronk Technologies, fotogrfía tomada en el laboratorio.
 </p>
+
 ## OBJETIVOS
 ### General 
 Operar con el simulador Pronk OxSim (OX-1) y el monitor de signos vitales uMEC 100 para pruebas funcionales.
