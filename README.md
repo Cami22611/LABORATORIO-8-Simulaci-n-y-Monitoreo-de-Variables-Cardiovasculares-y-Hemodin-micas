@@ -354,7 +354,7 @@ Por esta razón, ante una alarma de SpO₂ baja en condiciones de mala perfusió
 
 - Pronk Technologies. (2017). OxSim SpO₂ Simulator Operator’s Manual: OxSim OX-1 operation instructions. Pronk Technologies. https://mtk-biomed.com/wpcontent/uploads/2021/10/OX1_OxSim.pdf
   
--Pronk Technologies. (s. f.). OX-1 OxSim® Optical SpO₂ Pulse Oximeter Simulator. Pronk Technologies. https://www.pronktech.com/product/ox-1-oxsim-miniaturized-optical-spo2-pulseoximeter-tester/
+- Pronk Technologies. (s. f.). OX-1 OxSim® Optical SpO₂ Pulse Oximeter Simulator. Pronk Technologies. https://www.pronktech.com/product/ox-1-oxsim-miniaturized-optical-spo2-pulseoximeter-tester/
 
 - Pronk Technologies. (2017). OxSim® SpO₂ Simulator. YouTube. https://www.youtube.com/watchv=edUNWWY36p0
   
