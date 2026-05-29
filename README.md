@@ -350,5 +350,39 @@ Cuando la señal es débil, el monitor puede tener dificultad para diferenciar l
 
 Por esta razón, ante una alarma de SpO₂ baja en condiciones de mala perfusión, no se debe interpretar únicamente el valor numérico. También se debe revisar la forma de onda fotopletismográfica, la amplitud de la señal, la colocación del sensor, la temperatura periférica, el estado circulatorio del paciente y la presencia de movimiento. Si la onda se observa distorsionada, irregular o de muy baja amplitud, la lectura puede no ser confiable y la alarma puede corresponder a un falso positivo.
 
+## Referencias 
+
+- Pronk Technologies. (2017). OxSim SpO₂ Simulator Operator’s Manual: OxSim OX-1 operation instructions. Pronk Technologies. https://mtk-biomed.com/wpcontent/uploads/2021/10/OX1_OxSim.pdf
+  
+-Pronk Technologies. (s. f.). OX-1 OxSim® Optical SpO₂ Pulse Oximeter Simulator. Pronk Technologies. https://www.pronktech.com/product/ox-1-oxsim-miniaturized-optical-spo2-pulseoximeter-tester/
+
+- Pronk Technologies. (2017). OxSim® SpO₂ Simulator. YouTube. https://www.youtube.com/watchv=edUNWWY36p0
+  
+- World Health Organization. (2011). Medical equipment maintenance programme overview. World Health Organization. https://www.who.int/publications/i/item/9789241501538
+  
+- International Organization for Standardization. (2026). ISO 80601-2-61:2026: Medical electrical equipment—Part 2-61: Particular requirements for basic safety and essential performance of pulse oximeter equipment. ISO. https://www.iso.org/standard/84595.html
+  
+- International Electrotechnical Commission. (2011). IEC 60601-2-27:2011: Medical electrical equipment—Part 2-27: Particular requirements for the basic safety and essential performance of electrocardiographic monitoring equipment. IEC. https://webstore.iec.ch/en/publication/2638
+  
+- International Organization for Standardization. (2018). IEC 80601-2-30:2018: Medical electrical equipment—Part 2-30: Particular requirements for basic safety and essential performance of automated non-invasive sphygmomanometers. ISO. https://www.iso.org/standard/70653.html
+  
+- ANSI/AAMI. (2019). ANSI/AAMI/ISO 81060-2:2019: Non-invasive sphygmomanometers—Part 2: Clinical investigation of intermittent automated measurement type. ANSI/AAMI. https://webstore.ansi.org/standards/aami/ansiaamiiso810602019
+  
+- Sapra, A., Malik, A., & Bhandari, P. (2023). Vital sign assessment. En StatPearls. StatPearls Publishing. https://www.ncbi.nlm.nih.gov/books/NBK553213/
+  
+- Torp, K. D., Modi, P., & Simon, L. V. (2023). Pulse oximetry. En StatPearls. StatPearls Publishing. https://www.ncbi.nlm.nih.gov/books/NBK470348/
+  
+- King, J., Lowery, D. R., & Singh, S. (2023). Physiology, cardiac output. En StatPearls. StatPearls Publishing. https://www.ncbi.nlm.nih.gov/books/NBK470455/
+  
+- Kuhn, C. (2001). Hemodynamic monitoring. En Surgical Treatment: Evidence-Based and Problem-Oriented. NCBI Bookshelf. https://www.ncbi.nlm.nih.gov/books/NBK6895/
+
+## Integrantes
+
+- Maria Camila Martinez
+- Isabel Maldonado
+  
+
+
+
 
 
