@@ -3,10 +3,23 @@
 ## INTRODUCCIÓN
 El monitoreo de signos vitales constituye una herramienta fundamental en el ámbito clínico, debido a que permite evaluar de forma continua variables fisiológicas asociadas al estado cardiovascular y respiratorio del paciente, favoreciendo la detección temprana de alteraciones que puedan comprometer su seguridad. Dentro de estos parámetros, la pulsioximetría permite estimar de manera no invasiva la saturación periférica de oxígeno y es ampliamente utilizada para identificar y vigilar estados de hipoxemia (Organización Panamericana de la Salud, 2020). En este contexto, el monitor de signos vitales uMEC 100 permite la medición y visualización de variables clínicas como SpO₂, frecuencia de pulso, frecuencia cardíaca y otros parámetros requeridos para la vigilancia del paciente (Mindray, 2023). Por su parte, el simulador Pronk OxSim OX-1 permite verificar funcionalmente sistemas de pulsioximetría mediante la simulación de valores definidos de saturación de oxígeno, frecuencia de pulso e índice de perfusión, incluyendo condiciones como bradicardia, taquicardia, hipoxemia y baja perfusión (Pronk Technologies, s.f.). Por ello, el uso conjunto del uMEC 100 y el OxSim OX-1 en la práctica de laboratorio permite relacionar el funcionamiento técnico del monitor con criterios de seguridad clínica, precisión de medición y activación de alarmas ante condiciones fisiológicas simuladas.
 <img width="894" height="542" alt="image" src="https://github.com/user-attachments/assets/14320c88-6c72-4e90-a869-fb1259710aff" />
+<p align="center">
+  <strong>Figura 1.</strong> <em>Monitor de signos vitales Mindray uMEC100 utilizado para el monitoreo de variables fisiológicas como ECG, SpO₂, frecuencia cardiaca, temperatura y presión arterial no invasiva.</em>
+</p>
+
+<p align="center">
+  <strong>Fuente:</strong> Mindray, página oficial del monitor de paciente uMEC 100/120/150.
+</p>
 
 <img width="900" height="1600" alt="image" src="https://github.com/user-attachments/assets/cdb0bacf-6df3-4a00-8c22-b2462c3a003d" />
 
+<p align="center">
+  <strong>Figura 2.</strong> <em>Simulador Pronk OxSim OX-1 empleado para generar señales ópticas de pulsioximetría y verificar la medición de SpO₂ y frecuencia cardiaca en el monitor uMEC100.</em>
+</p>
 
+<p align="center">
+  <strong>Fuente:</strong> Pronk Technologies, fotogrfía tomada en el laboratorio.
+</p>
 ## OBJETIVOS
 ### General 
 Operar con el simulador Pronk OxSim (OX-1) y el monitor de signos vitales uMEC 100 para pruebas funcionales.
@@ -72,17 +85,14 @@ En las pruebas relacionadas con la saturación de oxígeno, se observó que el m
 - ### Simulación de paciente bradicárdico
 
 Se configuró el simulador OxSim para representar un paciente bradicárdico. En la evidencia fotográfica registrada, el monitor uMEC100 mostró una frecuencia cardiaca de **40 bpm** y una saturación periférica de oxígeno de **95%**, valores que coincidieron con la condición simulada.
-
-<p align="center">
-  <img src="imagenes/figura4.jpg" width="700">
-</p>
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/3313f509-56f5-459a-812d-8f4c58360785" />
 
 <p align="center">
   <strong>Figura 4.</strong> <em>Simulación de paciente bradicárdico en el monitor uMEC100, con frecuencia cardiaca de 40 bpm y SpO₂ de 95%.</em>
 </p>
 
 <p align="center">
-  <strong>Fuente:</strong> Elaboración propia.
+  <strong>Fuente:</strong> Fotografía tomada en el laboratorio.
 </p>
 
 ### Cálculo de errores
@@ -105,20 +115,15 @@ Los resultados indican que el monitor uMEC100 registró correctamente la condici
 - ### Registro de la forma de onda fotopletismográfica
 
 Se observó y registró la forma de onda de la señal fotopletismográfica mostrada en la pantalla del uMEC100. La señal presentó un comportamiento **pulsátil, periódico y repetitivo**, característico de una onda de pulsioximetría.
-
-<p align="center">
-  <img src="imagenes/figura5.jpg" width="700">
-</p>
+<img width="1600" height="1200" alt="image" src="https://github.com/user-attachments/assets/0eeebabf-97f4-415c-92e6-88381f50ed0f" />
 
 <p align="center">
   <strong>Figura 5.</strong> <em>Forma de onda fotopletismográfica observada en el monitor uMEC100 durante una condición de frecuencia cardiaca de 80 bpm y SpO₂ de 85%.</em>
 </p>
 
 <p align="center">
-  <strong>Fuente:</strong> Elaboración propia.
+  <strong>Fuente:</strong> Fotografía tomada en el laboratorio.
 </p>
-
-
 En la imagen se observa una frecuencia cardiaca de **80 bpm** y una SpO₂ de **85%**. La onda fotopletismográfica presenta pulsos regulares, con una amplitud visible y una morfología repetitiva. Esto indica que el sensor estaba detectando adecuadamente la señal óptica generada por el simulador.
 
 La forma de onda fotopletismográfica representa los cambios pulsátiles del volumen sanguíneo periférico detectados por el sensor de SpO₂. Por ello, su frecuencia guarda relación directa con la frecuencia cardiaca, mientras que su amplitud y definición dependen de la calidad de la perfusión y de la señal recibida por el monitor.
@@ -129,38 +134,33 @@ En esta condición particular, la onda conserva una estructura clara y periódic
 
 En el monitor uMEC100 se ingresó al menú de configuración de alarmas para ajustar los límites de saturación periférica de oxígeno. En la evidencia fotográfica se observa que el límite inferior de alarma para SpO₂ fue configurado en **90%**.
 
-<p align="center">
-  <img src="imagenes/figura6.jpg" width="700">
-</p>
-
+<img width="1600" height="1204" alt="image" src="https://github.com/user-attachments/assets/15805c03-60a4-4c16-85e9-8bbdeea5f7fd" />
 <p align="center">
   <strong>Figura 6.</strong> <em>Configuración del límite inferior de alarma de SpO₂ en 90% en el monitor uMEC100.</em>
 </p>
 
 <p align="center">
-  <strong>Fuente:</strong> Elaboración propia.
+  <strong>Fuente:</strong> Fotografía tomada en el laboratorio.
 </p>
 
 En la configuración observada, el parámetro SpO₂ quedó activo con un límite alto de **100%** y un límite bajo de **90%**, con prioridad media. Esta configuración permitió preparar el equipo para detectar de manera automática una condición de saturación baja cuando el valor medido descendiera por debajo del umbral establecido.
 
 Este ajuste es importante porque define el punto a partir del cual el monitor activa la alarma visual y sonora, permitiendo advertir una posible condición de hipoxemia simulada.
 
-- ### Simulación de SpO₂ baja y cálculo de errores
+- ### Simulación de SpO₂ baja 
 
 Posteriormente, el simulador OxSim se ajustó para representar una condición de **frecuencia cardiaca de 80 bpm** y **SpO₂ de 85%**. Después de la simulación, se verificó en el uMEC100 la activación de la alarma correspondiente a SpO₂ baja, dado que el valor mostrado quedó por debajo del límite inferior configurado de 90%.
 
+
+<img width="1600" height="1131" alt="image" src="https://github.com/user-attachments/assets/1238936f-5ad8-4295-9efa-c0a9972572f1" />
+
 <p align="center">
-  <img src="imagenes/figura7.jpg" width="700">
+  <strong>Figura 6.</strong> <em>Configuración del límite inferior de alarma de SpO₂ en 90% en el monitor uMEC100.</em>
 </p>
 
 <p align="center">
-  <strong>Figura 7.</strong> <em>Activación de alarma por SpO₂ baja en el monitor uMEC100, con frecuencia cardiaca de 80 bpm y SpO₂ de 85%.</em>
+  <strong>Fuente:</strong> Fotografía tomada en el laboratorio.
 </p>
-
-<p align="center">
-  <strong>Fuente:</strong> Elaboración propia.
-</p>
-
 ### Cálculo de errores
 
 | Variable | Valor simulado en OxSim | Valor mostrado en uMEC100 | Error absoluto | Error porcentual |
@@ -182,36 +182,30 @@ El monitor uMEC100 detectó adecuadamente la condición de SpO₂ baja. En la pa
 
 Posteriormente, se modificó la configuración del monitor para ajustar el límite superior de alarma de SpO₂. En la evidencia se observa que el valor alto fue configurado en **97%**, mientras que el valor bajo permaneció en **90%**.
 
-<p align="center">
-  <img src="imagenes/figura8.jpg" width="700">
-</p>
-
+<img width="1600" height="1228" alt="image" src="https://github.com/user-attachments/assets/45c98a83-439e-4a46-802b-15a02a863520" />
 <p align="center">
   <strong>Figura 8.</strong> <em>Configuración del límite superior de alarma de SpO₂ en 97% y del límite inferior en 90% en el monitor uMEC100.</em>
 </p>
 
 <p align="center">
-  <strong>Fuente:</strong> Elaboración propia.
+  <strong>Fuente:</strong> Fotografía tomada en el laboratorio.
 </p>
+
 
 El establecimiento del límite superior en 97% permitió preparar el monitor para identificar una condición de saturación elevada. En la configuración se observa que la alarma de SpO₂ permaneció activa, con prioridad media. Este ajuste es el que hace posible que, al registrarse un valor superior a 97%, el equipo emita la alarma correspondiente de saturación alta.
 
-- ### Verificación de alarma por SpO₂ alta y cálculo de errores
+- ### Verificación de alarma por SpO₂ alta 
 
 Con el límite superior ya configurado en 97%, se verificó la activación de la alarma de SpO₂ alta. En la evidencia fotográfica disponible, el monitor mostró una **frecuencia cardiaca de 140 bpm** y una **SpO₂ de 99%**, por lo cual se activó la alarma visual de saturación alta.
 
+<img width="1600" height="1127" alt="image" src="https://github.com/user-attachments/assets/b584304f-a450-450a-86ad-02446ced9cdd" />
 <p align="center">
-  <img src="imagenes/figura9.jpg" width="700">
+  <strong>Figura 9.</strong> <em>Activación de alarma por SpO₂ alta en el monitor uMEC100, con SpO₂ de 99% y frecuencia cardiaca de 140 bpm.</em>
 </p>
 
 <p align="center">
-  <strong>Figura 9.</strong> <em>Activación de la alarma por SpO₂ alta en el monitor uMEC100, con SpO₂ de 99% y frecuencia cardiaca de 140 bpm.</em>
+  <strong>Fuente:</strong> Fotografía tomada en el laboratorio.
 </p>
-
-<p align="center">
-  <strong>Fuente:</strong> Elaboración propia.
-</p>
-
 ### Cálculo de errores
 
 | Variable | Valor simulado en OxSim | Valor mostrado en uMEC100 | Error absoluto | Error porcentual |
@@ -235,18 +229,14 @@ En cuanto a la onda fotopletismográfica, se observa una señal más rápida deb
 
 Finalmente, se registró una condición de taquicardia en el monitor uMEC100. En la evidencia fotográfica se observa una **frecuencia cardiaca de 140 bpm** y una **SpO₂ de 98%**, junto con la activación de la alarma de frecuencia cardiaca elevada.
 
-> Nota: la guía plantea una taquicardia de 140 bpm con SpO₂ de 95%; sin embargo, en la evidencia fotográfica disponible el monitor muestra una SpO₂ de 98%. Para conservar coherencia entre el texto y la evidencia, el análisis se realiza con los valores observados en la imagen.
 
-<p align="center">
-  <img src="imagenes/figura10.jpg" width="700">
-</p>
-
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/48599bcd-dc4e-4d46-8a00-1c021713d264" />
 <p align="center">
   <strong>Figura 10.</strong> <em>Simulación de taquicardia en el monitor uMEC100, con frecuencia cardiaca de 140 bpm y SpO₂ de 98%.</em>
 </p>
 
 <p align="center">
-  <strong>Fuente:</strong> Elaboración propia.
+  <strong>Fuente:</strong> Fotografía tomada en el laboratorio.
 </p>
 
 ### Cálculo de errores
